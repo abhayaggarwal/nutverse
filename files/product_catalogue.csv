@@ -1,0 +1,17 @@
+Product_id,Product_name,Product_display_name,Product_image_path,Price (Rs/Kg),best_prices,fair_prices,Diff_from_fair_price
+1001,Cashew (काजू),cashew,files/images/cashew,1320,1200,1320,0
+1002,Almond (बादाम) - California,almond_california,files/images/almond_california,810,750,825,-15
+1003,Almond (बादाम) - Mamra,almond_mamra,files/images/almond_mamra,3500,3200,3520,-20
+1004,Walnut (अखरोट) Giri,walnut_giri,files/images/walnut_giri,1850,1800,1980,-130
+1005,Raisin (किशमिश) Indian,raisin_indian,files/images/raisin_kandhari,700,650,715,-15
+1005,Raisin (किशमिश) Kandhari,raisin_kandhari,files/images/raisin_kandhari,700,650,715,-15
+1006,Fig (अंजीर),fig,files/images/fig,2000,2000,2200,-200
+1007,Pistachio (पिस्ता),pistachio,files/images/pistachio,1400,1400,1540,-140
+1008,Cardamom (इलाइची) 8mm,cardamom_8mm,files/images/cardamom_8mm,3800,3800,4180,-380
+1009,Dates (खजूर),dates,files/images/dates,450,450,495,-45
+1010,Fox Nut (मखाना),fox_nut,files/images/fox_nut,1750,1750,1925,-175
+1011,Charoli nut (चिरौंजी),charoli_nut,files/images/charoli_nut,2500,2500,2750,-250
+1012,Dry Dates (छुहारे),dry_dates,files/images/dry_dates,400,350,385,15
+1013,Roasted Almond (बादाम) - California,roasted_almond_california,files/images/roasted_almond_california,1000,950,1045,-45
+1014,Roasted Cashew (काजू),roasted_cashew,files/images/roasted_cashew,1350,1350,1485,-135
+1015,"Mix Seeds (pumpkin, flax, chia,  etc.)",mix_seeds,files/images/mix_seeds,600,600,660,-60

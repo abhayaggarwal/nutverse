@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="Premium quality dry fruits and nuts at wholesale prices. Handpicked from Delhi's best markets. Order cashews, almonds, pistachios, dates, and more online.">
+    <meta name="keywords" content="dry fruits, nuts, cashew, almond, pistachio, dates, wholesale prices, Delhi, premium quality">
+    
+    <!-- Open Graph Meta Tags (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Premium Dry Fruits & Nuts - Wholesale Prices">
+    <meta property="og:description" content="Handpicked premium quality dry fruits from Delhi's best markets at wholesale prices. Order online now!">
+    <meta property="og:image" content="http://www.nutverse.co.in/files/images/dry_fruit_banner.jpg">
+    <meta property="og:image:alt" content="Premium dry fruits and nuts collection">
+    <meta property="og:url" content="http://www.nutverse.co.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NutVerse">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Dry Fruits & Nuts - Wholesale Prices">
+    <meta name="twitter:description" content="Handpicked premium quality dry fruits from Delhi's best markets at wholesale prices. Order online now!">
+    <meta name="twitter:image" content="http://www.nutverse.co.in/files/images/dry_fruit_banner.jpg">
+    <meta name="twitter:image:alt" content="Premium dry fruits and nuts collection">
+    
+    <!-- WhatsApp Specific (uses Open Graph) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="NutVerse">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#e74c3c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="files/images/brand_logo.png">
+    <link rel="apple-touch-icon" href="files/images/brand_logo.png">
+
+    <title>Premium Dry Fruits & Nuts - Wholesale Prices | Delhi's Best Quality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(139, 195, 74, 0.3);
+        }
+
+        .logo-text .company-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #8BC34A;
+            line-height: 1.2;
+        }
+
+        .logo-text .tagline {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: #8BC34A;
+            color: white;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #8BC34A;
+        }
+
+        .mobile-nav {
+            display: none;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-link {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .mobile-nav-link:hover {
+            background: #8BC34A;
+            color: white;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 
+         * Styles the <p> elements inside elements with the 'hero' class.
+         * - Sets the font size to 1.2em for better readability.
+         * - Adds a 30px margin below each paragraph for spacing.
+         * - Applies a subtle text shadow for improved contrast on backgrounds.
+         */
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            background: #FF6B35;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            background: #8BC34A;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .products {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .products-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            min-height: 120px;
+            width: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image {
+            flex: 0 0 120px;
+            background: #f3f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            min-width: 120px;
+        }
+
+        .product-image img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .products {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .product-card {
+                min-height: 120px;
+            }
+
+            .product-image {
+                flex: 0 0 80px;
+                padding: 8px;
+                min-width: 80px;
+            }
+
+            .product-image img {
+                width: 65px;
+                height: 65px;
+            }
+
+            .product-info {
+                padding: 12px 15px;
+                min-width: 0;
+                flex: 1;
+                overflow: hidden;
+            }
+
+            .product-name {
+                font-size: 0.95rem;
+                margin-bottom: 8px;
+                line-height: 1.4;
+                word-wrap: break-word;
+                hyphens: auto;
+            }
+
+            .product-price {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .products {
+                padding: 10px;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+                padding: 0 10px;
+            }
+
+            .product-card {
+                flex-direction: column;
+                min-height: auto;
+                text-align: center;
+            }
+
+            .product-image {
+                flex: none;
+                padding: 15px;
+                border-radius: 12px 12px 0 0;
+                align-self: center;
+            }
+
+            .product-image img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .product-info {
+                padding: 15px 20px 20px 20px;
+                text-align: center;
+            }
+
+            .product-name {
+                font-size: 1rem;
+                margin-bottom: 10px;
+                line-height: 1.4;
+                word-wrap: break-word;
+                hyphens: auto;
+            }
+
+            .product-price {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+        }
+
+        /* Extra Small Mobile Styles */
+        @media (max-width: 360px) {
+            .products {
+                padding: 8px;
+            }
+
+            .products-grid {
+                gap: 12px;
+            }
+
+            .product-info {
+                padding: 12px 15px 15px 15px;
+            }
+
+            .product-name {
+                font-size: 0.9rem;
+                line-height: 1.3;
+            }
+
+            .product-price {
+                font-size: 1rem;
+            }
+        }
+
+        /* Order Section */
+        .order-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .order-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .order-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .order-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .order-button {
+            background: #FFD700;
+            color: #333;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .order-button:hover {
+            background: #ffd000;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 90px;
+            height: 90px;
+            background: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+
+
+        /* Heritage Section */
+        .heritage {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .heritage-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .year-badge {
+            background: #FFD700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: #8BC34A;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            padding: 10px;
+            background: rgba(139, 195, 74, 0.1);
+            border-radius: 8px;
+            border-left: 3px solid #8BC34A;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .product-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .product-image {
+                width: 100px;
+                height: 100px;
+                font-size: 3em;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .feature-item {
+                padding: 15px;
+            }
+
+            .feature-icon {
+                font-size: 2.5em;
+            }
+
+            .order-section h2 {
+                font-size: 2em;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                left: 20px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content {
+                padding: 10px 15px;
+            }
+
+            .logo-img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .logo-text .company-name {
+                font-size: 1.1em;
+            }
+
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section" style="display: flex; align-items: center;">
+                <img 
+                    src="files/images/brand_logo.png" 
+                    alt="Premium Dry Fruits Logo" 
+                    class="logo-img"
+                    style="
+                        width: 72px; 
+                        height: 72px; 
+                        object-fit: contain; 
+                        filter: contrast(1.2) brightness(1.1) drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+                        border-radius: 16px;
+                        background: #fff;
+                        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+                        margin-right: 18px;
+                        border: 2px solid #e0c68a;
+                    "
+                >
+                <div class="logo-text">
+                    <div class="company-name" style="font-size: 2em; font-weight: bold; letter-spacing: 1px; font-family: 'Pacifico', 'Caveat', 'Comic Sans MS', cursive, sans-serif; color: #b08d2f; text-shadow: 1px 2px 8px #f7e7b0, 0 1px 0 #fff;">NutVerse</div>
+                    <div class="tagline" style="font-size: 1.1em; color: #b08d2f; font-weight: 600; font-family: 'Quicksand', 'Montserrat', 'Arial Rounded MT Bold', Arial, sans-serif; letter-spacing: 0.5px; text-shadow: 0 1px 4px #f7e7b0;">Complete Nutritional Universe</div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">🏠 Home</a>
+                <a href="#products" class="nav-link">🥜 Products</a>
+                <a href="#order" class="nav-link">📞 Order</a>
+                <a href="#contact" class="nav-link">📧 Contact Us</a>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+        <div class="mobile-nav">
+            <a href="#home" class="mobile-nav-link">🏠 Home</a>
+            <a href="#products" class="mobile-nav-link">🥜 Products</a>
+            <a href="#order" class="mobile-nav-link">📞 Order</a>
+            <a href="#contact" class="mobile-nav-link">📧 Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home" style="position: relative; overflow: hidden; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+        <img 
+            src="files/images/dry_fruit_banner.jpg" 
+            alt="Dry Fruits Background" 
+            class="hero-bg-img"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 1; filter: contrast(1.15) saturate(1.2);"
+        >
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    var heroText = document.querySelector('.hero > .hero-content');
+                    if (heroText) {
+                        heroText.style.opacity = '1';
+                        heroText.style.transform = 'translateY(0)';
+                        heroText.style.transition = 'opacity 0.7s ease, transform 0.7s cubic-bezier(0.4,0,0.2,1)';
+                    }
+                }, 200);
+            });
+        </script>
+        <style>
+            .hero {
+                min-height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            .hero-bg-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+                opacity: 1;
+                filter: contrast(1.15) saturate(1.2);
+            }
+            .hero-content {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2em 1em 1em 1em;
+            }
+            .hero-content,
+            .hero-content h1,
+            .hero-content p,
+            .hero-content a {
+                color: #111 !important;
+                text-shadow: none !important;
+            }
+            @media (max-width: 600px) {
+                .hero {
+                    min-height: 320px;
+                    padding: 0;
+                }
+                .hero-bg-img {
+                    object-fit: cover;
+                    min-height: 320px;
+                }
+                .hero-content {
+                    padding: 1.2em 0.5em 0.5em 0.5em;
+                }
+            }
+            @media (max-width: 400px) {
+                .hero {
+                    min-height: 220px;
+                }
+                .hero-bg-img {
+                    min-height: 220px;
+                }
+            }
+            .hero-logo-img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+                box-shadow: 0 4px 24px rgba(176,141,47,0.18);
+                border-radius: 50%;
+                border: 3px solid #b08d2f;
+                background: #fff;
+            }
+            @media (max-width: 600px) {
+                .hero-logo-img {
+                    max-width: 120px !important;
+                }
+            }
+            @media (max-width: 400px) {
+                .hero-logo-img {
+                    max-width: 80px !important;
+                }
+            }
+        </style>
+        <div class="hero-content">
+            <div class="hero-logo-container" style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 18px;">
+                <img 
+                    src="files/images/brand_logo.png" 
+                    alt="NutVerse Logo" 
+                    class="hero-logo-img"
+                    style="max-width: 420px; min-width: 180px; width: 100%;"
+                >
+            </div>
+            <!-- Highlight Banner: moved above features, dark background -->
+            <div class="highlight-banner" style="
+                width: 100%;
+                background: linear-gradient(90deg, #222 0%, #3a2c13 100%);
+                color: #fff;
+                font-family: 'Quicksand', 'Montserrat', 'Arial Rounded MT Bold', Arial, sans-serif;
+                font-size: 0.98em;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                text-align: center;
+                padding: 0.5em 0 0.5em 0;
+                margin: 0 0 1.2em 0;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+                z-index: 2;
+                position: relative;
+            ">
+                ✋ Handpicked from Delhi's Best Markets &nbsp;•&nbsp; 💰 <span style="color:#ffe082;">Wholesale Prices</span> &nbsp;•&nbsp; 🏆 50 Years Experience
+            </div>
+            <div class="hero-logo-container" style="display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 18px;">
+                <a href="#products" class="cta-button" style="margin: 0; order: 1;">🛍️ EXPLORE NOW</a>
+                <a href="#order" class="cta-button" style="margin: 0; order: 3;">📞 ORDER NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-item">
+                <span class="feature-icon">👍</span>
+                <h3>Best Quality Products</h3>
+                <p>Welcome to our dry fruit company, where quality is paramount with 50 years of expertise.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🌟</span>
+                <h3>Premium Selection</h3>
+                <p>Handpicked Dry Fruits for Unmatched Quality from Delhi's finest markets.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🌿</span>
+                <h3>Freshness Guarantee</h3>
+                <p>Savor the freshness with our guaranteed flavorful dry fruits collection.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">💯</span>
+                <h3>100% Natural Product</h3>
+                <p>Experience the pure indulgence of our 100% natural dry fruits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="heritage">
+        <div class="heritage-content">
+            <div class="year-badge">🗓️ SINCE 1975 - 50 YEARS 🗓️</div>
+            <h2 class="section-title">🏛️ Legacy of Excellence</h2>
+            <p style="font-size: 1.1em; margin-bottom: 10px;">
+                🏪 Sourced from Delhi's premium markets with personal supplier relationships built over five decades.
+            </p>
+            <p style="font-size: 1.1em; margin-bottom: 20px;">
+                💎 Our expert eye for quality ensures you receive only the finest grade dry fruits at wholesale prices.
+            </p>
+            <p style="color: #8BC34A; font-weight: bold; font-size: 1.2em;">
+                🤝 "Your Trust, Our 50-Year Legacy"
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title">🥜 POPULAR DRY FRUIT ITEMS 🥜</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/cashew.jpg" alt="Cashew (काजू)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cashew (काजू)</h3>
+                    <p class="product-price">₹1320/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/almond_california.jpg" alt="Almond (बादाम) - California">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Almond (बादाम) - California</h3>
+                    <p class="product-price">₹810/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/almond_mamra.jpg" alt="Almond (बादाम) - Mamra">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Almond (बादाम) - Mamra</h3>
+                    <p class="product-price">₹3500/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/walnut_giri.jpg" alt="Walnut (अखरोट) Giri">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Chilli Walnut (अखरोट) Giri</h3>
+                    <p class="product-price">₹1850/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/raisin_kandhari.jpg" alt="Raisin (किशमिश) Kandhari">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Raisin (किशमिश)</h3>
+                    <p class="product-price">₹700/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/fig.jpg" alt="Fig (अंजीर)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Fig (अंजीर)</h3>
+                    <p class="product-price">₹2000/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/pistachio.jpg" alt="Pistachio (पिस्ता)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pistachio (पिस्ता)</h3>
+                    <p class="product-price">₹1400/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/cardamom_8mm.jpg" alt="Cardamom (इलाइची) 8mm">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cardamom (इलाइची) 8mm</h3>
+                    <p class="product-price">₹3800/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/dates.jpg" alt="Dates (खजूर)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Dates (खजूर)</h3>
+                    <p class="product-price">₹450/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/fox_nut.jpg" alt="Fox Nut (मखाना)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Fox Nut (मखाना)</h3>
+                    <p class="product-price">₹1750/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/charoli_nut.jpg" alt="Charoli nut (चिरौंजी)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Charoli nut (चिरौंजी)</h3>
+                    <p class="product-price">₹2500/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/dry_dates.jpg" alt="Dry Dates (छुहारे)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Dry Dates (छुहारे)</h3>
+                    <p class="product-price">₹400/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/roasted_almond_california.jpg" alt="Roasted Almond (बादाम) - California">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Roasted Almond (बादाम) - California</h3>
+                    <p class="product-price">₹1000/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/roasted_cashew.jpg" alt="Roasted Cashew (काजू)">
+                </div>      
+                <div class="product-info">
+                    <h3 class="product-name">Roasted Cashew (काजू)</h3>
+                    <p class="product-price">₹1350/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="files/images/mix_seeds.jpg" alt="Mix Seeds (pumpkin, flax, chia,  etc.)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mix Seeds (pumpkin, flax, chia,  etc.)</h3>
+                    <p class="product-price">₹600/kg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="order-content">
+            <h2>📞 READY TO ORDER? 📞</h2>
+            <p>🏆 Experience 50 years of premium quality and wholesale pricing advantage.</p>
+            <p>🚚 Free delivery.</p>
+            
+            <a href="https://forms.gle/vn4kdABdBzqwAj2w9" target="_blank" class="order-button">
+                📋 PLACE ORDER - GOOGLE FORM
+            </a>
+            
+            <a href="https://wa.me/+919015399945?text=Hi! I want to order premium dry fruits" target="_blank" class="order-button">
+                💬 ORDER VIA WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h3>📧 Contact Us</h3>
+            <div class="contact-info">
+                <p>📱 <strong>Phone:</strong> +91-9015399945</p>
+                <p>📧 <strong>Email:</strong> customercare@nutverse.co.in</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+919015399945?text=Hi! I'm interested in your premium dry fruits. Can you help me with pricing and availability?" 
+       target="_blank" 
+       class="whatsapp-float" 
+       title="Chat with us on WhatsApp">
+        <img src="files/images/whatsapp_icon.png" alt="WhatsApp Chat" style="width: 64px; height: 64px; display: block;">
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.mobile-nav').classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.product-card, .feature-item');
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.product-card, .feature-item');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+            });
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Run once on load
+        });
+    </script>
+</body>
+</html>

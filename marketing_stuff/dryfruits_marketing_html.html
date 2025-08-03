@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Dry Fruits Marketing Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            padding: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            background: linear-gradient(45deg, #8BC34A, #4CAF50);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(139, 195, 74, 0.3);
+        }
+        
+        .whatsapp-template {
+            background: #E8F5E8;
+            border: 2px solid #4CAF50;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .whatsapp-template::before {
+            content: "📱";
+            font-size: 2em;
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        
+        .template-title {
+            background: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+        }
+        
+        .card-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .google-content {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-item {
+            background: linear-gradient(45deg, #8BC34A, #4CAF50);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(139, 195, 74, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .badge {
+            background: #FFD700;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        .quality-box {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            border: 3px solid #ff6b9d;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.2);
+        }
+        
+        .timeline {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            color: #333;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .testimonial {
+            background: #f0f8ff;
+            border-left: 5px solid #4CAF50;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+        }
+        
+        .batch-info {
+            background: #f8f9fa;
+            border: 2px dashed #6c757d;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            padding: 2px 8px;
+            border-radius: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥜 Premium Dry Fruits Marketing Content 🥜</h1>
+            <p>50 Years of Excellence • Delhi's Premium Source • Quality Guaranteed</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📱 WhatsApp Message Templates</div>
+            
+            <div class="whatsapp-template">
+                <div class="template-title">Template 1: New Customer Introduction</div>
+                <p><strong>🌟 <em>Premium Dry Fruits - 50 Years of Excellence</em> 🌟</strong></p>
+                <br>
+                <p>Welcome to our family business! 👨‍👩‍👧‍👦</p>
+                <br>
+                <p>✅ <span class="highlight">50 years of expertise</span> in dry fruits sourcing<br>
+                ✅ <span class="highlight">Handpicked premium quality</span> from Delhi's best markets 🏪<br>
+                ✅ <span class="highlight">Wholesale prices</span> - maximum value for you 💰<br>
+                ✅ <span class="highlight">Personal relationships</span> with top suppliers 🤝<br>
+                ✅ <span class="highlight">Quality guaranteed</span> every single time ✨</p>
+                <br>
+                <p>We never compromise on quality, and we never lose your trust. 🛡️</p>
+                <br>
+                <p><strong><em>Ready to experience the difference?</em></strong> 🚀<br>
+                📱 Reply for our premium catalog<br>
+                🚚 Free delivery on orders above ₹500</p>
+            </div>
+
+            <div class="whatsapp-template">
+                <div class="template-title">Template 2: Order Confirmation</div>
+                <p><strong>✅ <em>Order Confirmed!</em></strong> 🎉</p>
+                <br>
+                <p>Thank you for choosing us! Your order is being prepared with the same care we've maintained for 50 years. 👨‍🍳</p>
+                <br>
+                <p><strong>🛒 Your Order:</strong> [Order Details]<br>
+                <strong>💎 Quality Promise:</strong> Premium, handpicked dry fruits<br>
+                <strong>🚚 Delivery:</strong> [Date/Time]</p>
+                <br>
+                <p>Our 5-decade expertise ensures you receive only the finest quality at wholesale prices. 🏆</p>
+                <br>
+                <p><strong>📍 Track your order:</strong> [Link]<br>
+                <strong>❓ Questions?</strong> Simply reply to this message</p>
+            </div>
+
+            <div class="whatsapp-template">
+                <div class="template-title">Template 3: Quality Assurance Follow-up</div>
+                <p><strong>🔍 <em>Quality Check Complete</em> ✅</strong></p>
+                <br>
+                <p>Your premium dry fruits have passed our rigorous quality standards: 📋</p>
+                <br>
+                <p>🥜 <strong>Handpicked</strong> by our experienced team<br>
+                📏 <strong>Size & Grade:</strong> Premium quality assured<br>
+                🌟 <strong>Freshness:</strong> Sourced from Delhi's best markets<br>
+                💯 <strong>50-Year Standard:</strong> Our reputation guarantee</p>
+                <br>
+                <p><strong><em>Ready for dispatch!</em></strong> 📦</p>
+                <br>
+                <p>Our half-century of expertise in every pack. 🎁<br>
+                <strong><em>Delivery update coming soon...</em></strong> ⏰</p>
+            </div>
+
+            <div class="whatsapp-template">
+                <div class="template-title">Template 4: Customer Retention</div>
+                <p><strong>🙏 <em>Thank You for Your Trust</em></strong></p>
+                <br>
+                <p>We hope you enjoyed our premium dry fruits! 😊</p>
+                <br>
+                <p><strong>🤔 Why customers choose us for 50 years:</strong><br>
+                • Consistent premium quality 💎<br>
+                • Wholesale prices - best value 💰<br>
+                • Personal market relationships 🤝<br>
+                • Handpicked selection process ✋<br>
+                • Trust that never breaks 🛡️</p>
+                <br>
+                <p><strong>🔄 Reorder easily:</strong> Reply "REPEAT" for same order<br>
+                <strong>🆕 New varieties:</strong> Ask for our seasonal catalog<br>
+                <strong>📦 Bulk orders:</strong> Special wholesale rates available</p>
+                <br>
+                <p><strong><em>Your satisfaction is our 50-year legacy.</em></strong> 🏆</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🎴 Info Card Content</div>
+            
+            <div class="info-card">
+                <div class="card-title">🏆 50 YEARS OF PREMIUM DRY FRUITS 🏆</div>
+                <p><em>🗓️ Established 1975</em></p>
+                <br>
+                <p>From Delhi's finest markets to your doorstep - delivering premium quality for five decades. 🚚✨</p>
+                <br>
+                <p><strong>📋 Our Promise:</strong><br>
+                • 🥜 Handpicked premium quality<br>
+                • 💰 Wholesale pricing advantage<br>
+                • 🤝 Personal supplier relationships<br>
+                • ✅ Quality guaranteed every time<br>
+                • 🛡️ Trust built over 50 years</p>
+                <br>
+                <p><em>🌟 Experience the difference expertise makes.</em></p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-title">💎 PREMIUM QUALITY GUARANTEE 💎</div>
+                <p><em>🏪 Why We're Delhi's Trusted Name</em></p>
+                <br>
+                <p>✓ <strong>👨‍🎓 Expert Selection</strong> - 50 years of quality recognition<br>
+                ✓ <strong>🏬 Best Markets</strong> - Sourced from Delhi's premium hubs<br>
+                ✓ <strong>✋ Handpicked</strong> - Every piece carefully selected<br>
+                ✓ <strong>💵 Wholesale Rates</strong> - Maximum value for customers<br>
+                ✓ <strong>🚫 Zero Compromise</strong> - Quality standards never lowered</p>
+                <br>
+                <p><em>🤝 Your trust is our most valuable asset.</em></p>
+            </div>
+
+            <div class="info-card">
+                <div class="card-title">🎯 UNMATCHED EXPERTISE & SERVICE 🎯</div>
+                <p><em>⏰ Five Decades of Excellence</em></p>
+                <br>
+                <p>🏆 <strong>50+ Years Experience</strong> in dry fruits industry<br>
+                🤝 <strong>Personal Relationships</strong> with best suppliers<br>
+                🔍 <strong>Quality Expertise</strong> - recognizing premium grade<br>
+                💰 <strong>Wholesale Prices</strong> - cost-efficient for customers<br>
+                📦 <strong>Consistent Quality</strong> - never disappoints</p>
+                <br>
+                <p><em>📋 Every order reflects our half-century commitment.</em></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🌐 Google Business Page Content</div>
+            
+            <div class="google-content">
+                <h3>🏢 Business Description</h3>
+                <h4><strong>🥜 Premium Dry Fruits - 50 Years of Delhi's Finest Quality 🥜</strong></h4>
+                <br>
+                <p>📅 Established in 1975, we are Delhi's most trusted name in premium dry fruits, bringing you five decades of unmatched expertise and quality assurance. 🏆 Our deep-rooted relationships with Delhi's best markets ensure you receive only handpicked, premium-grade dry fruits at wholesale prices. 💰</p>
+                <br>
+                <p><strong>🤔 Why Choose Us:</strong></p>
+                <p>🕰️ <strong>Half-Century Expertise:</strong> 50 years of experience in recognizing and sourcing the finest quality dry fruits<br>
+                🏪 <strong>Premium Market Access:</strong> Exclusive relationships with Delhi's top dry fruit markets<br>
+                ✋ <strong>Handpicked Selection:</strong> Every piece carefully chosen by our expert team<br>
+                💵 <strong>Wholesale Advantage:</strong> Direct market sourcing means cost-efficient prices for you<br>
+                ✅ <strong>Quality Guarantee:</strong> Our reputation built on never compromising quality standards<br>
+                🤝 <strong>Trust & Reliability:</strong> Five decades of customer satisfaction and retained loyalty</p>
+            </div>
+
+            <div class="google-content">
+                <h3>🛍️ Our Specialties</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <span class="feature-icon">🌰</span>
+                        <strong>Premium Almonds</strong>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🥜</span>
+                        <strong>Cashews</strong>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌰</span>
+                        <strong>Walnuts</strong>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🗓️</span>
+                        <strong>Premium Dates</strong>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🍇</span>
+                        <strong>Raisins</strong>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌰</span>
+                        <strong>Pistachios</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📦 Additional Packaging Elements</div>
+            
+            <div class="feature-grid">
+                <div class="quality-box">
+                    <h4>🏆 50 YEARS EXCELLENCE 🏆</h4>
+                    <p>📅 SINCE 1975</p>
+                    <p>🎯 PREMIUM GRADE AAA</p>
+                    <p>✋ HANDPICKED</p>
+                </div>
+                
+                <div class="quality-box">
+                    <h4>💯 QUALITY PROMISE 💯</h4>
+                    <p>🔍 EXPERT SELECTED</p>
+                    <p>✅ QUALITY TESTED</p>
+                    <p>🌟 FRESHNESS SEALED</p>
+                </div>
+                
+                <div class="quality-box">
+                    <h4>🏪 DELHI'S PREMIUM 🏪</h4>
+                    <p>📍 BEST MARKET SOURCE</p>
+                    <p>🤝 PERSONAL RELATIONS</p>
+                    <p>💰 WHOLESALE DIRECT</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                📅 1975 ────────────────────────── 2025 📅<br>
+                🌱 Founded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏆 50 Years Excellence
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🏷️ Quality Badges & Seals</div>
+            
+            <div class="feature-grid">
+                <div class="badge">⭐ PREMIUM GRADE AAA ⭐</div>
+                <div class="badge">🏆 SINCE 1975 🏆</div>
+                <div class="badge">💯 QUALITY KEPT 💯</div>
+                <div class="badge">🏪 DELHI'S PREMIUM SOURCE 🏪</div>
+                <div class="badge">💰 WHOLESALE DIRECT 💰</div>
+                <div class="badge">🔍 EXPERT SELECTED 🔍</div>
+                <div class="badge">✅ QUALITY TESTED ✅</div>
+                <div class="badge">🌟 FRESHNESS SEALED 🌟</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📝 Quality Process Description</div>
+            
+            <div class="google-content">
+                <h4>🔄 Our Quality Process</h4>
+                <p><strong>1️⃣ 🏪 Source from Delhi's premium markets</strong><br>
+                <strong>2️⃣ ✋ Handpick using 50 years expertise</strong><br>
+                <strong>3️⃣ 🔍 Quality check every batch</strong><br>
+                <strong>4️⃣ 📦 Package with care</strong><br>
+                <strong>5️⃣ 🚚 Deliver freshness guaranteed</strong></p>
+            </div>
+
+            <div class="google-content">
