@@ -1,0 +1,29 @@
+
+# Google form attributes
+; google_form_for_taking_orders
+; https://docs.google.com/forms/d/e/1FAIpQLScc-KN4dujK3PSUPsVaAujsbE2ruUXa36cb2NygvDwbFwYnsw/viewform?usp=header
+; https://docs.google.com/forms/d/11tJBrLBKNfPUIQDOQhGF07sqRA_OM2xT4f3YWfnOt-Y/edit
+
+DryFruits Order Form - August
+
+Your Name
+WhatsApp Contact No.
+
+Cashew (काजू) ------ Rs 1320/Kg
+
+Almond (बादाम) - California ------ Rs 810/Kg
+Almond (बादाम) - Mamra ------ Rs 3500/Kg
+Walnut (अखरोट) Giri ------ Rs 1850/Kg
+Raisin (किशमिश) Kandhari ------ Rs 700/Kg
+
+Fig (अंजीर) ------ Rs 2000/Kg
+
+Pistachio (पिस्ता) ------ Rs 1400/Kg
+Cardamom (इलाइची) 8mm ------ Rs 3800/Kg
+Dates (खजूर) ------ Rs 450/Kg
+Fox Nut (मखाना) ------ Rs 1750/Kg
+Charoli nut (चिरौंजी) ------ Rs 2500/Kg
+Dry Dates (छुहारे) ------ Rs 400/Kg
+Roasted Almond (बादाम) - California ------ Rs 1000/Kg
+Roasted Cashew (काजू) ------ Rs 1350/Kg
+Mix Seeds (pumpkin, flax, chia,  etc.) ------ Rs 600/Kg
