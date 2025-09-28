@@ -240,6 +240,52 @@
             font-weight: bold;
         }
 
+        /* Category Filter Tabs */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .tab-button {
+            background: #f5f5f5;
+            border: 2px solid #ddd;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            min-width: fit-content;
+        }
+
+        .tab-button:hover {
+            background: #e8f5e8;
+            border-color: #8BC34A;
+            color: #333;
+            transform: translateY(-1px);
+        }
+
+        .tab-button.active {
+            background: #8BC34A;
+            border-color: #8BC34A;
+            color: white;
+            box-shadow: 0 2px 8px rgba(139, 195, 74, 0.3);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card.hidden {
+            display: none;
+        }
+
         .products-grid {
             display: grid;
             gap: 20px;
@@ -314,6 +360,16 @@
                 margin-bottom: 20px;
             }
 
+            .category-tabs {
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .tab-button {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+
             .products-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -364,6 +420,18 @@
                 font-size: 1.3rem;
                 margin-bottom: 15px;
                 padding: 0 10px;
+            }
+
+            .category-tabs {
+                gap: 6px;
+                margin-bottom: 15px;
+                padding: 0 5px;
+            }
+
+            .tab-button {
+                padding: 8px 12px;
+                font-size: 12px;
+                border-radius: 20px;
             }
 
             .product-card {
@@ -917,8 +985,20 @@
     <!-- Products Section -->
     <section class="products" id="products">
         <h2 class="section-title">🥜 POPULAR DRY FRUIT ITEMS 🥜</h2>
+        
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs">
+            <button class="tab-button" data-filter="all">All Products</button>
+            <button class="tab-button active" data-filter="Classic Dry fruits">Classic Dry Fruits</button>
+            <button class="tab-button" data-filter="Edible Seeds">Edible Seeds</button>
+            <button class="tab-button" data-filter="Dried Fruits & Berries">Dried Fruits & Berries</button>
+            <button class="tab-button" data-filter="Flavoured & Roasted">Flavoured & Roasted</button>
+            <button class="tab-button" data-filter="Exotic Nuts">Exotic Nuts</button>
+            <button class="tab-button" data-filter="Premium Spices">Premium Spices</button>
+        </div>
+        
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/cashew.jpg" alt="Cashew (काजू)">
                 </div>
@@ -928,7 +1008,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/almond_california.jpg" alt="Almond (बादाम) - California">
                 </div>
@@ -938,7 +1018,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/almond_mamra.jpg" alt="Almond (बादाम) - Mamra">
                 </div>
@@ -948,7 +1028,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/walnut_giri.jpg" alt="Walnut (अखरोट) Giri">
                 </div>
@@ -958,7 +1038,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/raisin_kandhari.jpg" alt="Raisin (किशमिश) Kandhari">
                 </div>
@@ -968,7 +1048,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/fig.jpg" alt="Fig (अंजीर)">
                 </div>
@@ -978,17 +1058,17 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/pistachio.jpg" alt="Pistachio (पिस्ता)">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pistachio (पिस्ता)</h3>
-                    <p class="product-price">₹1400/kg</p>
+                    <p class="product-price">₹1500/kg</p>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Premium Spices">
                 <div class="product-image">
                     <img src="files/images/cardamom_8mm.jpg" alt="Cardamom (इलाइची) 8mm">
                 </div>
@@ -998,17 +1078,17 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Dried Fruits & Berries">
                 <div class="product-image">
                     <img src="files/images/dates.jpg" alt="Dates (खजूर)">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Dates (खजूर)</h3>
-                    <p class="product-price">₹450/kg</p>
+                    <p class="product-price">₹500/kg</p>
                 </div>
             </div>
             
-            <div class="product-card">
+            <div class="product-card" data-category="Classic Dry fruits">
                 <div class="product-image">
                     <img src="files/images/fox_nut.jpg" alt="Fox Nut (मखाना)">
                 </div>
@@ -1018,7 +1098,17 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/mix_seeds.jpg" alt="Mix Seeds (pumpkin, flax, chia,  etc.)">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mix Seeds (pumpkin, flax, chia,  etc.)</h3>
+                    <p class="product-price">₹600/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
                 <div class="product-image">
                     <img src="files/images/charoli_nut.jpg" alt="Charoli nut (चिरौंजी)">
                 </div>
@@ -1028,7 +1118,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Dried Fruits & Berries">
                 <div class="product-image">
                     <img src="files/images/dry_dates.jpg" alt="Dry Dates (छुहारे)">
                 </div>
@@ -1038,7 +1128,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Dried Fruits & Berries">
                 <div class="product-image">
                     <img src="files/images/khurmani.jpg" alt="Dried Apricot (खुबानी)">
                 </div>
@@ -1047,7 +1137,7 @@
                     <p class="product-price">₹900/kg</p>
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-category="Dried Fruits & Berries">
                 <div class="product-image">
                     <img src="files/images/munaka.jpg" alt="Munaka (मुनक्का)">
                 </div>
@@ -1056,7 +1146,7 @@
                     <p class="product-price">₹1200/kg</p>
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-category="Exotic Nuts">
                 <div class="product-image">
                     <img src="files/images/brazil_nuts.jpg" alt="Brazil Nuts">
                 </div>
@@ -1065,7 +1155,7 @@
                     <p class="product-price">₹3800/kg</p>
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-category="Exotic Nuts">
                 <div class="product-image">
                     <img src="files/images/cranberries.jpg" alt="Cranberries">
                 </div>
@@ -1075,7 +1165,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Flavoured & Roasted">
                 <div class="product-image">
                     <img src="files/images/roasted_almond_california.jpg" alt="Roasted Almond (बादाम) - California">
                 </div>
@@ -1085,7 +1175,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Flavoured & Roasted">
                 <div class="product-image">
                     <img src="files/images/roasted_cashew.jpg" alt="Roasted Cashew Salted (काजू)">
                 </div>      
@@ -1095,7 +1185,7 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Flavoured & Roasted">
                 <div class="product-image">
                     <img src="files/images/roasted_cashew.jpg" alt="Roasted Cashew Masala (काजू)">
                 </div>
@@ -1105,13 +1195,73 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="Edible Seeds">
                 <div class="product-image">
-                    <img src="files/images/mix_seeds.jpg" alt="Mix Seeds (pumpkin, flax, chia,  etc.)">
+                    <img src="files/images/chilgoza.jpeg" alt="Chilgoza Giri (चिलगोज़ा)">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Mix Seeds (pumpkin, flax, chia,  etc.)</h3>
-                    <p class="product-price">₹600/kg</p>
+                    <h3 class="product-name">Chilgoza Giri (चिलगोज़ा)</h3>
+                    <p class="product-price">₹6500/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/pumpkin_seeds.jpg" alt="Pumpkin Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pumpkin Seeds</h3>
+                    <p class="product-price">₹650/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/sunflower_seeds.jpg" alt="Sunflower Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sunflower Seeds</h3>
+                    <p class="product-price">₹800/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/chia_seeds.jpg" alt="Chia Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Chia Seeds</h3>
+                    <p class="product-price">₹1000/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/flax_seeds.jpg" alt="Flax Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Flax Seeds</h3>
+                    <p class="product-price">₹300/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/watermelon_seeds.jpg" alt="Watermelon Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Watermelon Seeds</h3>
+                    <p class="product-price">₹1000/kg</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="Edible Seeds">
+                <div class="product-image">
+                    <img src="files/images/muskmelon_seeds.jpg" alt="Muskmelon Seeds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Muskmelon Seeds</h3>
+                    <p class="product-price">₹1950/kg</p>
                 </div>
             </div>
         </div>
@@ -1208,6 +1358,70 @@
             
             window.addEventListener('scroll', animateOnScroll);
             animateOnScroll(); // Run once on load
+        });
+
+        // Category filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const productCards = document.querySelectorAll('.product-card');
+
+            // Add click event listeners to all tab buttons
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    filterProducts(filterValue);
+                });
+            });
+
+            function filterProducts(category) {
+                productCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    
+                    if (category === 'all' || cardCategory === category) {
+                        // Show the product card
+                        card.classList.remove('hidden');
+                        card.style.display = 'flex';
+                        
+                        // Add a small delay for smooth animation
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        // Hide the product card
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(-10px)';
+                        
+                        // Hide after animation completes
+                        setTimeout(() => {
+                            card.classList.add('hidden');
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+
+                // Scroll to products section after filtering
+                setTimeout(() => {
+                    const productsSection = document.getElementById('products');
+                    if (productsSection) {
+                        productsSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }, 100);
+            }
+
+            // Initialize - show all products by default
+            filterProducts('Classic Dry fruits');
         });
     </script>
 </body>
